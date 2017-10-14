@@ -1,4 +1,4 @@
-import akka.actor.ActorSystem
+package com.sample
 
 /**
   * Created by lielran on 10/14/17.

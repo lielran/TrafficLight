@@ -1,10 +1,13 @@
+package com.sample
+
+import com.sample.model.TrafficLight
+
 import scala.concurrent.Future
 
 /**
   * Created by lielran on 10/14/17.
   */
 class TrafficLightDao(state: TrafficLight) {
-
 
   private var db: DisplayLights = DisplayLights(state)
 

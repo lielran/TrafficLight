@@ -1,4 +1,8 @@
+package com.sample
+
 import akka.actor.{Actor, ActorLogging, Props}
+import com.sample.events.{ChangeLightEvent, PriorChangeLightEvent}
+import com.sample.model.{Green, Red, TrafficLight, Yellow}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
@@ -13,9 +17,8 @@ object TrafficLightActor {
 
 }
 
-class TrafficLightActor(initState: TrafficLight) extends Actor with ActorLogging {
+class TrafficLightActor(val dao: TrafficLightDao) extends Actor with ActorLogging {
 
-  private val dao = new TrafficLightDao(initState)
   displayState()
 
   private val warningBeforeSwitchMode = DisplayLights(List(Green, Yellow))
@@ -31,7 +34,7 @@ class TrafficLightActor(initState: TrafficLight) extends Actor with ActorLogging
     }
   }
 
-  def warningBeforeChangeState(): Unit = {
+  private def warningBeforeChangeState(): Unit = {
     dao.getCurrentState().flatMap{
       case green if green.inGreenMode() => dao.save(warningBeforeSwitchMode).map { _=>
         displayState()
@@ -40,11 +43,11 @@ class TrafficLightActor(initState: TrafficLight) extends Actor with ActorLogging
     }
   }
 
-  def displayState() =dao.getCurrentState().map(s => log.info(s"[${this.self.path}]:state=${s.state}  "))
+  private def displayState() =dao.getCurrentState().map(s => log.info(s"[${this.self.path}]:state=${s.state}  "))
 
 
   override def receive: Receive = {
-    case ChangeLightEvent =>changeState()
+    case ChangeLightEvent => changeState()
     case PriorChangeLightEvent => warningBeforeChangeState()
     case unSupportedMessage => log.error(s"${this.self.path} got $unSupportedMessage")
   }
