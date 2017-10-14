@@ -1,0 +1,50 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64460:/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/tools.jar:/Users/lielran/projects/trafficLightSimulator/target/scala-2.11/classes:/Users/lielran/.ivy2/cache/com.typesafe/config/bundles/config-1.3.1.jar:/Users/lielran/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/Users/lielran/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.5.4.jar:/Users/lielran/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar com.sample.Main
+objc[8708]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin/java (0x10dee84c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10dfb04e0). One of the two will be used. Which one is undefined.
+------------Traffic Simulator--------------------
+-------------------------------------------------
+[INFO] [10/15/2017 00:09:13.699] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Green)
+[INFO] [10/15/2017 00:09:13.699] [ForkJoinPool-1-worker-1] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Green)
+[INFO] [10/15/2017 00:09:13.699] [ForkJoinPool-1-worker-5] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Red)
+[INFO] [10/15/2017 00:09:13.699] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Red)
+
+[INFO] [10/15/2017 00:09:18.713] [ForkJoinPool-1-worker-5] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Green, Yellow)
+[INFO] [10/15/2017 00:09:18.713] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Green, Yellow)
+
+
+
+
+[INFO] [10/15/2017 00:10:08.711] [ForkJoinPool-1-worker-5] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Green)
+[INFO] [10/15/2017 00:10:08.711] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Green)
+[INFO] [10/15/2017 00:10:08.712] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Red)
+[INFO] [10/15/2017 00:10:08.712] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Red)
+
+
+
+
+[INFO] [10/15/2017 00:13:28.709] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Green, Yellow)
+[INFO] [10/15/2017 00:13:28.709] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Green, Yellow)
+
+
+
+
+[INFO] [10/15/2017 00:15:08.700] [ForkJoinPool-1-worker-15] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Green)
+[INFO] [10/15/2017 00:15:08.700] [ForkJoinPool-1-worker-5] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Red)
+[INFO] [10/15/2017 00:15:08.700] [ForkJoinPool-1-worker-9] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Green)
+[INFO] [10/15/2017 00:15:08.700] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Red)
+
+
+[INFO] [10/15/2017 00:17:38.683] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Green, Yellow)
+[INFO] [10/15/2017 00:17:38.683] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Green, Yellow)
+
+[INFO] [10/15/2017 00:20:08.680] [ForkJoinPool-1-worker-9] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Red)
+[INFO] [10/15/2017 00:20:08.680] [ForkJoinPool-1-worker-15] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Green)
+[INFO] [10/15/2017 00:20:08.680] [ForkJoinPool-1-worker-3] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Red)
+[INFO] [10/15/2017 00:20:08.681] [ForkJoinPool-1-worker-15] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Green)
+
+[INFO] [10/15/2017 00:21:48.678] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Green, Yellow)
+[INFO] [10/15/2017 00:21:48.684] [ForkJoinPool-1-worker-11] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Green, Yellow)
+
+[INFO] [10/15/2017 00:25:08.669] [ForkJoinPool-1-worker-1] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaNorth]:state=List(Green)
+[INFO] [10/15/2017 00:25:08.678] [ForkJoinPool-1-worker-7] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaEast]:state=List(Red)
+[INFO] [10/15/2017 00:25:08.679] [ForkJoinPool-1-worker-15] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaSouth]:state=List(Green)
+[INFO] [10/15/2017 00:25:08.679] [ForkJoinPool-1-worker-9] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest] [akka://Main/user/app/com.sample.TrafficLightActor$@31b5b9eaWest]:state=List(Red)
